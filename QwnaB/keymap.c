@@ -15,25 +15,25 @@ enum custom_keycodes {
 
 
 
-#define DUAL_FUNC_0 LT(10, KC_N)
-#define DUAL_FUNC_1 LT(7, KC_F9)
-#define DUAL_FUNC_2 LT(4, KC_F2)
-#define DUAL_FUNC_3 LT(7, KC_F15)
-#define DUAL_FUNC_4 LT(10, KC_F15)
-#define DUAL_FUNC_5 LT(14, KC_5)
-#define DUAL_FUNC_6 LT(12, KC_F9)
-#define DUAL_FUNC_7 LT(13, KC_F7)
-#define DUAL_FUNC_8 LT(12, KC_F10)
-#define DUAL_FUNC_9 LT(8, KC_F21)
-#define DUAL_FUNC_10 LT(6, KC_F12)
+#define DUAL_FUNC_0 LT(13, KC_F4)
+#define DUAL_FUNC_1 LT(5, KC_F22)
+#define DUAL_FUNC_2 LT(4, KC_T)
+#define DUAL_FUNC_3 LT(8, KC_2)
+#define DUAL_FUNC_4 LT(11, KC_C)
+#define DUAL_FUNC_5 LT(12, KC_F8)
+#define DUAL_FUNC_6 LT(1, KC_A)
+#define DUAL_FUNC_7 LT(8, KC_F2)
+#define DUAL_FUNC_8 LT(2, KC_F21)
+#define DUAL_FUNC_9 LT(12, KC_2)
+#define DUAL_FUNC_10 LT(10, KC_F17)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_voyager(
     DUAL_FUNC_0,    KC_2,           KC_3,           DUAL_FUNC_1,    KC_5,           DUAL_FUNC_2,                                    DUAL_FUNC_9,    KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           
-    DUAL_FUNC_3,    DUAL_FUNC_4,    DUAL_FUNC_5,    DUAL_FUNC_6,    DUAL_FUNC_7,    KC_DELETE,                                      KC_BSLS,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           
+    DUAL_FUNC_3,    DUAL_FUNC_4,    DUAL_FUNC_5,    DUAL_FUNC_6,    DUAL_FUNC_7,    KC_CAPS,                                        ALL_T(KC_BSLS), KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           
     KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           DUAL_FUNC_8,                                    MEH_T(KC_QUOTE),KC_H,           KC_J,           KC_K,           KC_L,           KC_SCLN,        
-    MT(MOD_LCTL, KC_Z),LT(4, KC_X),    LT(2, KC_C),    MT(MOD_RSFT, KC_V),MT(MOD_LALT, KC_B),KC_CAPS,                                        KC_HYPR,        MT(MOD_RALT, KC_N),MT(MOD_RSFT, KC_M),LT(1, KC_COMMA),LT(4, KC_DOT),  MT(MOD_RCTL, KC_SLASH),
-                                                    LT(1, KC_ENTER),MT(MOD_LGUI, KC_TAB),                                DUAL_FUNC_10,   LT(2, KC_BSPC)
+    MT(MOD_LCTL, KC_Z),LT(4, KC_X),    LT(2, KC_C),    MT(MOD_RSFT, KC_V),MT(MOD_LALT, KC_B),KC_DELETE,                                      KC_BSPC,        MT(MOD_RALT, KC_N),MT(MOD_RSFT, KC_M),LT(1, KC_COMMA),LT(4, KC_DOT),  MT(MOD_RCTL, KC_SLASH),
+                                                    LT(1, KC_ENTER),MT(MOD_LGUI, KC_TAB),                                DUAL_FUNC_10,   LT(2, KC_ENTER)
   ),
   [1] = LAYOUT_voyager(
     KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          KC_F11,                                         KC_F12,         KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         

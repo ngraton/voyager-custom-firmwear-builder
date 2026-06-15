@@ -3,7 +3,7 @@
 #define DEBOUNCE 4
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "QwnaB/zLaaza"
+#define SERIAL_NUMBER "QwnaB/eaLgAE"
 #define LAYER_STATE_8BIT
 
 #define NAVIGATOR_TRACKBALL_CPI 30
